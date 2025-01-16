@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+        button{
+            color: white;
+            background-color: #2b85cd; height: 43px; width: 291px;
+       }
+       input{
+            height: 17px;
+            width: 283px;
+       }
+
+    </style>
+
     </head>
+
     <body>
-        <!--Desarrolla una aplicación que gestione una biblioteca digital, 
-utilizando un archivo JSONcon información sobre libros. 
-La aplicación debe incluir las siguientes funcionalidades:
-
-• Seleccionar un área (categoría): Permite seleccionar una categoría o área (por ejemplo,Fantasía, 
-Historia, Ciencia Ficción, etc.) y muestra una lista de libros correspondientes a esa área, 
-con su título y autor.• Buscar un libro por autor: Permite introducir el nombre de un autor 
-y muestra una lista de los libros que ha escrito, incluyendo el año de publicación y
- su disponibilidad.
-
-• Filtrar por disponibilidad: Permite seleccionar si se quieren ver únicamente los libros 
-disponibles o los no disponibles para préstamo, mostrando el título, autor 
-y categoría del libro
-
-EXTRAS:
-• Añadir un nuevo libro: Permite introducir los datos de un nuevo libro dentro del archivo json
--->
-        <h1>Biblioteca Digital</h1>
+        <h1 style="text-align: center;">Biblioteca Digital</h1>
+        <br>
+        <h2>Libros por categorias</h2>
         <label for="categorias_libros">Selecciona una categoria</label>
         <select id="categorias_libros"></select>
+        <br>
         <button id="buscar_categoria">Buscar Categoria</button>
         <div id="div_categoria"></div>
+        <br>
+        <h2>Buscar por Autor</h2>
+        <input type="text" id="introducir_autor"
+            placeholder="Introduce el nombre del autor" />
+        <br>
+        <button id="buscarAutor">Buscar</button>
+        <div id="resultados_busqueda"></div>
+        <br>
+        <h2>Libros filtrados por Disponibilidad</h2>
+        <div id="filtro_disponibilidad">
+            <button id="btn_disponibles" value="true">Disponibles</button>
+            <br><br>
+            <button id="btn_no_disponibles" value="false">No disponibles</button>
+        </div>
+        <div id="resultados_disponibilidad"></div>
         <script src="biblioteca.js"></script>
+
     </body>
+
 </html>
