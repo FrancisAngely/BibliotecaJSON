@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-        button{
-            color: white;
-            background-color: #2b85cd; height: 43px; width: 291px;
-       }
-       input{
-            height: 17px;
-            width: 283px;
-       }
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        color: white;
+        background-color: #2b85cd;
+        height: 43px;
+        width: 291px;
+      }
+      input {
+        height: 17px;
+        width: 283px;
+      }
     </style>
+  </head>
 
-    </head>
-
-    <body>
-        <h1 style="text-align: center;">Biblioteca Digital</h1>
-        <br>
-        <h2>Libros por categorias</h2>
-        <label for="categorias_libros">Selecciona una categoria</label>
-        <select id="categorias_libros"></select>
-        <br>
-        <button id="buscar_categoria">Buscar Categoria</button>
-        <div id="div_categoria"></div>
-        <br>
-        <h2>Buscar por Autor</h2>
-        <input type="text" id="introducir_autor"
-            placeholder="Introduce el nombre del autor" />
-        <br>
-        <button id="buscarAutor">Buscar</button>
-        <div id="resultados_busqueda"></div>
-        <br>
-        <h2>Libros filtrados por Disponibilidad</h2>
-        <div id="filtro_disponibilidad">
-            <button id="btn_disponibles" value="true">Disponibles</button>
-            <br><br>
-            <button id="btn_no_disponibles" value="false">No disponibles</button>
-        </div>
-        <div id="resultados_disponibilidad"></div>
-        <script src="biblioteca.js"></script>
-
-    </body>
-
+  <body>
+    <h1 style="text-align: center">Biblioteca Digital</h1>
+    <br />
+    <h2>Libros por categorias</h2>
+    <label for="categorias_libros">Selecciona una categoria</label>
+    <select id="categorias_libros"></select>
+    <br />
+    <button id="buscar_categoria">Buscar Categoria</button>
+    <div id="div_categoria"></div>
+    <br />
+    <h2>Buscar por Autor</h2>
+    <input
+      type="text"
+      id="introducir_autor"
+      placeholder="Introduce el nombre del autor"
+    />
+    <br />
+    <button id="buscarAutor">Buscar</button>
+    <div id="resultados_busqueda"></div>
+    <br />
+    <h2>Libros filtrados por Disponibilidad</h2>
+    <div id="filtro_disponibilidad">
+      <button id="btn_disponibles" value="true">Disponibles</button>
+      <br /><br />
+      <button id="btn_no_disponibles" value="false">No disponibles</button>
+    </div>
+    <div id="resultados_disponibilidad"></div>
+    <h2>Añadir Nuevo Libro</h2>
+    <form id="form_nuevo_libro">
+      <input type="text" id="titulo" placeholder="Título" required /><br />
+      <input type="text" id="autor" placeholder="Autor" required /><br />
+      <input type="text" id="genero" placeholder="Género" required /><br />
+      <input
+        type="number"
+        id="año_publicacion"
+        placeholder="Año de Publicación"
+        required
+      />
+      <br />
+      <select id="disponibilidad">
+        <option value="true">Disponible</option>
+        <option value="false">No Disponible</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Añadir Libro</button>
+    </form>
+    <div id="resultado_añadir_libro"></div>
+    <script src="biblioteca.js"></script>
+  </body>
 </html>

@@ -45,36 +45,35 @@ function cargarCategoria(datos) {
     buscarLibrosPorAutor(autor, datos);
   });
 
-  document.getElementById("btn_disponibles").addEventListener("click", function () {
-    filtrarPorDisponibilidad(true, datos);
-});
+  document
+    .getElementById("btn_disponibles")
+    .addEventListener("click", function () {
+      filtrarPorDisponibilidad(true, datos);
+    });
 
-document.getElementById("btn_no_disponibles").addEventListener("click", function () {
-    filtrarPorDisponibilidad(false, datos);
-});
-
+  document
+    .getElementById("btn_no_disponibles")
+    .addEventListener("click", function () {
+      filtrarPorDisponibilidad(false, datos);
+    });
 }
-
 
 function buscarLibrosPorAutor(autor, datos) {
   const resultados = datos.libros.filter((libro) =>
     libro.autor.toLowerCase().includes(autor.toLowerCase())
   );
   const resultadoDiv = document.getElementById("resultados_busqueda");
-  resultadoDiv.innerHTML = ""; 
+  resultadoDiv.innerHTML = "";
   if (resultados.length > 0) {
     resultados.forEach((libro) => {
       const item = document.createElement("p");
-      item.textContent = `${libro.titulo} (${
-        libro.año_publicacion
-      })`;
+      item.textContent = `${libro.titulo} (${libro.año_publicacion})`;
       resultadoDiv.appendChild(item);
     });
   } else {
     resultadoDiv.textContent =
       "No se encontraron libros para el autor especificado.";
   }
-
 }
 
 function filtrarPorDisponibilidad(disponible, datos) {
@@ -82,11 +81,15 @@ function filtrarPorDisponibilidad(disponible, datos) {
     (libro) => libro.disponible === disponible
   );
   const resultadoDiv = document.getElementById("resultados_disponibilidad");
-  resultadoDiv.innerHTML = ""; 
+  resultadoDiv.innerHTML = "";
   if (resultados.length > 0) {
     resultados.forEach((libro) => {
       const item = document.createElement("p");
-      item.textContent = `${libro.titulo} - Autor: ${libro.autor} - Categoría: ${libro.genero}Disponible: ${libro.disponible ? "Sí" : "No"}`;
+      item.textContent = `${libro.titulo} - Autor: ${
+        libro.autor
+      } - Categoría: ${libro.genero}Disponible: ${
+        libro.disponible ? "Sí" : "No"
+      }`;
       resultadoDiv.appendChild(item);
     });
   } else {
@@ -95,10 +98,48 @@ function filtrarPorDisponibilidad(disponible, datos) {
   }
 }
 
+document
+  .getElementById("form_nuevo_libro")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nuevoLibro = {
+      titulo: document.getElementById("titulo").value,
+      autor: document.getElementById("autor").value,
+      genero: document.getElementById("genero").value,
+      año_publicacion: parseInt(
+        document.getElementById("año_publicacion").value
+      ),
+      disponible: document.getElementById("disponibilidad").value === "true",
+    };
+    fetch("./biblioteca.json", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(nuevoLibro),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error al añadir el libro");
+        }
+      })
+      .then((data) => {
+        document.getElementById("resultado_añadir_libro").textContent =
+          "Libro añadido exitosamente.";
+        document.getElementById("form_nuevo_libro").reset();
+      })
+      .catch((error) => {
+        document.getElementById("resultado_añadir_libro").textContent =
+          error.message;
+      });
+  });
+
 fetch("./biblioteca.json")
   .then((response) => {
     if (response.ok) {
-
       return response.json();
     } else {
       return response.status;
@@ -108,6 +149,3 @@ fetch("./biblioteca.json")
     console.log(datos);
     cargarCategoria(datos);
   });
-
-
-

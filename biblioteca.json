@@ -1,164 +1,164 @@
 {
-    "libros": [
-        {
-            "id": 1,
-            "titulo": "Cien Años de Soledad",
-            "autor": "Gabriel García Márquez",
-            "genero": "Realismo mágico",
-            "año_publicacion": 1967,
-            "disponible": true
-        },
-        {
-            "id": 2,
-            "titulo": "1984",
-            "autor": "George Orwell",
-            "genero": "Distopía",
-            "año_publicacion": 1949,
-            "disponible": false
-        },
-        {
-            "id": 3,
-            "titulo": "El Quijote",
-            "autor": "Miguel de Cervantes",
-            "genero": "Novela clásica",
-            "año_publicacion": 1605,
-            "disponible": true
-        },
-        {
-            "id": 4,
-            "titulo": "La Sombra del Viento",
-            "autor": "Carlos Ruiz Zafón",
-            "genero": "Misterio",
-            "año_publicacion": 2001,
-            "disponible": true
-        },
-        {
-            "id": 5,
-            "titulo": "Los Juegos del Hambre",
-            "autor": "Suzanne Collins",
-            "genero": "Ciencia ficción",
-            "año_publicacion": 2008,
-            "disponible": false
-        },
-        {
-            "id": 6,
-            "titulo": "El Nombre del Viento",
-            "autor": "Patrick Rothfuss",
-            "genero": "Fantasía",
-            "año_publicacion": 2007,
-            "disponible": true
-        },
-        {
-            "id": 7,
-            "titulo": "Sapiens: De Animales a Dioses",
-            "autor": "Yuval Noah Harari",
-            "genero": "Historia",
-            "año_publicacion": 2011,
-            "disponible": true
-        },
-        {
-            "id": 8,
-            "titulo": "Orgullo y Prejuicio",
-            "autor": "Jane Austen",
-            "genero": "Romance",
-            "año_publicacion": 1813,
-            "disponible": false
-        },
-        {
-            "id": 9,
-            "titulo": "El Alquimista",
-            "autor": "Paulo Coelho",
-            "genero": "Ficción",
-            "año_publicacion": 1988,
-            "disponible": true
-        },
-        {
-            "id": 10,
-            "titulo": "Crimen y Castigo",
-            "autor": "Fiódor Dostoyevski",
-            "genero": "Drama",
-            "año_publicacion": 1866,
-            "disponible": false
-        },
-        {
-            "id": 11,
-            "titulo": "La Divina Comedia",
-            "autor": "Dante Alighieri",
-            "genero": "Poesía épica",
-            "año_publicacion": 1320,
-            "disponible": true
-        },
-        {
-            "id": 12,
-            "titulo": "El Principito",
-            "autor": "Antoine de Saint-Exupéry",
-            "genero": "Fábula",
-            "año_publicacion": 1943,
-            "disponible": true
-        },
-        {
-            "id": 13,
-            "titulo": "Matar a un Ruiseñor",
-            "autor": "Harper Lee",
-            "genero": "Ficción",
-            "año_publicacion": 1960,
-            "disponible": false
-        },
-        {
-            "id": 14,
-            "titulo": "Donde los Árboles Cantan",
-            "autor": "Laura Gallego",
-            "genero": "Fantasía",
-            "año_publicacion": 2011,
-            "disponible": true
-        },
-        {
-            "id": 15,
-            "titulo": "Harry Potter y la Piedra Filosofal",
-            "autor": "J.K. Rowling",
-            "genero": "Fantasía",
-            "año_publicacion": 1997,
-            "disponible": false
-        },
-        {
-            "id": 16,
-            "titulo": "La Casa de los Espíritus",
-            "autor": "Isabel Allende",
-            "genero": "Realismo mágico",
-            "año_publicacion": 1982,
-            "disponible": true
-        },
-        {
-            "id": 17,
-            "titulo": "El Hobbit",
-            "autor": "J.R.R. Tolkien",
-            "genero": "Fantasía",
-            "año_publicacion": 1937,
-            "disponible": false
-        },
-        {
-            "id": 18,
-            "titulo": "Drácula",
-            "autor": "Bram Stoker",
-            "genero": "Terror",
-            "año_publicacion": 1897,
-            "disponible": true
-        },
-        {
-            "id": 19,
-            "titulo": "El Padrino",
-            "autor": "Mario Puzo",
-            "genero": "Novela negra",
-            "año_publicacion": 1969,
-            "disponible": false
-        },
-        {
-            "id": 20,
-            "titulo": "El Señor de los Anillos",
-            "autor": "J.R.R. Tolkien",
-            "genero": "Fantasía",
-            "año_publicacion": 1954,
-            "disponible": true
-        }
-    ]
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "Cien Años de Soledad",
+      "autor": "Gabriel García Márquez",
+      "genero": "Realismo mágico",
+      "año_publicacion": 1967,
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "genero": "Distopía",
+      "año_publicacion": 1949,
+      "disponible": false
+    },
+    {
+      "id": 3,
+      "titulo": "El Quijote",
+      "autor": "Miguel de Cervantes",
+      "genero": "Novela clásica",
+      "año_publicacion": 1605,
+      "disponible": true
+    },
+    {
+      "id": 4,
+      "titulo": "La Sombra del Viento",
+      "autor": "Carlos Ruiz Zafón",
+      "genero": "Misterio",
+      "año_publicacion": 2001,
+      "disponible": true
+    },
+    {
+      "id": 5,
+      "titulo": "Los Juegos del Hambre",
+      "autor": "Suzanne Collins",
+      "genero": "Ciencia ficción",
+      "año_publicacion": 2008,
+      "disponible": false
+    },
+    {
+      "id": 6,
+      "titulo": "El Nombre del Viento",
+      "autor": "Patrick Rothfuss",
+      "genero": "Fantasía",
+      "año_publicacion": 2007,
+      "disponible": true
+    },
+    {
+      "id": 7,
+      "titulo": "Sapiens: De Animales a Dioses",
+      "autor": "Yuval Noah Harari",
+      "genero": "Historia",
+      "año_publicacion": 2011,
+      "disponible": true
+    },
+    {
+      "id": 8,
+      "titulo": "Orgullo y Prejuicio",
+      "autor": "Jane Austen",
+      "genero": "Romance",
+      "año_publicacion": 1813,
+      "disponible": false
+    },
+    {
+      "id": 9,
+      "titulo": "El Alquimista",
+      "autor": "Paulo Coelho",
+      "genero": "Ficción",
+      "año_publicacion": 1988,
+      "disponible": true
+    },
+    {
+      "id": 10,
+      "titulo": "Crimen y Castigo",
+      "autor": "Fiódor Dostoyevski",
+      "genero": "Drama",
+      "año_publicacion": 1866,
+      "disponible": false
+    },
+    {
+      "id": 11,
+      "titulo": "La Divina Comedia",
+      "autor": "Dante Alighieri",
+      "genero": "Poesía épica",
+      "año_publicacion": 1320,
+      "disponible": true
+    },
+    {
+      "id": 12,
+      "titulo": "El Principito",
+      "autor": "Antoine de Saint-Exupéry",
+      "genero": "Fábula",
+      "año_publicacion": 1943,
+      "disponible": true
+    },
+    {
+      "id": 13,
+      "titulo": "Matar a un Ruiseñor",
+      "autor": "Harper Lee",
+      "genero": "Ficción",
+      "año_publicacion": 1960,
+      "disponible": false
+    },
+    {
+      "id": 14,
+      "titulo": "Donde los Árboles Cantan",
+      "autor": "Laura Gallego",
+      "genero": "Fantasía",
+      "año_publicacion": 2011,
+      "disponible": true
+    },
+    {
+      "id": 15,
+      "titulo": "Harry Potter y la Piedra Filosofal",
+      "autor": "J.K. Rowling",
+      "genero": "Fantasía",
+      "año_publicacion": 1997,
+      "disponible": false
+    },
+    {
+      "id": 16,
+      "titulo": "La Casa de los Espíritus",
+      "autor": "Isabel Allende",
+      "genero": "Realismo mágico",
+      "año_publicacion": 1982,
+      "disponible": true
+    },
+    {
+      "id": 17,
+      "titulo": "El Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "genero": "Fantasía",
+      "año_publicacion": 1937,
+      "disponible": false
+    },
+    {
+      "id": 18,
+      "titulo": "Drácula",
+      "autor": "Bram Stoker",
+      "genero": "Terror",
+      "año_publicacion": 1897,
+      "disponible": true
+    },
+    {
+      "id": 19,
+      "titulo": "El Padrino",
+      "autor": "Mario Puzo",
+      "genero": "Novela negra",
+      "año_publicacion": 1969,
+      "disponible": false
+    },
+    {
+      "id": 20,
+      "titulo": "El Señor de los Anillos",
+      "autor": "J.R.R. Tolkien",
+      "genero": "Fantasía",
+      "año_publicacion": 1954,
+      "disponible": true
+    }
+  ]
 }
